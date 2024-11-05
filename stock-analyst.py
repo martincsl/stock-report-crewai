@@ -155,9 +155,9 @@ with st.sidebar:
     st.header("Entre con el ticker")
 
     with st.form(key="research_form"):
-        topic=st.text_input("Select the ticker")
+        topic=st.text_input("Seleccione el ticker de la accion")
         
-        submit_button=st.form_submit_button(label="run")
+        submit_button=st.form_submit_button(label="Generar Informe")
 if submit_button:
     if not topic:
         st.error("Seleccione un ticker")   
