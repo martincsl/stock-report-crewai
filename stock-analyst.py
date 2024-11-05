@@ -44,7 +44,8 @@ get_stock_price = Task(
     agent= stock_price_analyst
 )
 
-search_tool = DuckDuckGoSearchResults(backend='news', num_results=10)
+# search_tool = DuckDuckGoSearchResults(backend='news', num_results=10)
+search_tool = DuckDuckGoSearchResults(num_results=10)
 
 news_analyst = Agent(
     role= "Stock News Analyst",
