@@ -140,8 +140,8 @@ translate_report = Task(
 )
 
 crew = Crew(
-    agents = [stock_price_analyst, news_analyst, stock_report_writter, spanish_translator],
-    tasks = [get_stock_price, get_news, write_report, translate_report], 
+    agents = [stock_price_analyst, news_analyst, stock_report_writter],
+    tasks = [get_stock_price, get_news, write_report], 
     verbose = 2,
     process= Process.hierarchical,
     full_output=True,
